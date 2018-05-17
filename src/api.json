@@ -1,0 +1,45 @@
+[
+    {
+        "id": "1",
+        "question": "What's your opinion on",
+        "character": "Pope Francis?",
+        "description": "He’s talking tough on clergy sexual abuse, but is he just another papal pervert protector? (thumbs down) or a true pedophile punishing pontiff? (thumbs up) ",
+        "linkmoreinformation": "https://www.google.com",
+        "closingin": 22,
+        "messagetitle": "Speak out. Be heard.",
+        "messagedescription": "Be counted",
+        "message": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only",
+        "votingboxes": [
+            {                                                                                     
+                "id": "1",
+                "image": "kanye-west.png",
+                "character": "Kanye West",
+                "sectiontime": 1,
+                "section": "Entertainment",                
+                "description": "Vestibulum diam ante, porttitor a odio eget, rhoncus neque. Aenean eu velit libero.",
+                "upvotes": 0,
+                "downvotes": 0                                       
+            },                
+            {                                                                                     
+                "id": "2",
+                "image": "kanye-west.png",
+                "character": "Mark Zuckerberg",
+                "sectiontime": 1,
+                "section": "Business",                
+                "description": "Vestibulum diam ante, porttitor a odio eget, rhoncus neque. Aenean eu velit libero.",
+                "upvotes": 0,
+                "downvotes": 0                                       
+            },                
+            {                                                                                     
+                "id": "3",
+                "image": "kanye-west.png",
+                "character": "Cristina Fernández de Kirchner",
+                "sectiontime": 1,
+                "section": "Politics",                
+                "description": "Vestibulum diam ante, porttitor a odio eget, rhoncus neque. Aenean eu velit libero.",
+                "upvotes": 0,
+                "downvotes": 0                                       
+            }
+        ]
+    }       
+]
