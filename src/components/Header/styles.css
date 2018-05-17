@@ -1,0 +1,12 @@
+.Header {
+    position: absolute;
+    margin-top: 20px;
+}
+.Title-logo {
+    color: #FFFFFF;
+    padding-left: 106px;
+    padding-top: 4px;    
+}
+.navbar-light .navbar-nav .nav-item>.nav-link {
+    color: #FFFFFF;
+}

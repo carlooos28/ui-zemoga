@@ -1,0 +1,51 @@
+.Opinion {
+    background: url(http://localhost:9000/images/pope.841a3cc7d03c887e3cdb922c4bdb6a01.png) no-repeat;
+    height: 700px;
+}
+.Opinion-article {
+    background-color: #565454d4;
+    padding-top: 35px;
+    /*padding-left: 35px;*/
+    /*position: absolute;*/
+    margin-top: 180px;       
+    /*margin-left: 135px;*/
+    /*max-width: 510px;*/
+    /*max-height: 460px;*/    
+}
+.ClosingIn {
+    /*position: absolute;*/
+    /*margin-top: 650px;*/       
+}
+.Character {
+    font-size: 62px;
+}
+.Description {
+    font-size: 22px;
+    padding-right: 45px;
+}
+.Opinion, .Link > a{
+    color: #FFFFFF;
+}
+.Link > a{
+    text-decoration: underline;
+}
+.Opinion-article > p:nth-of-type(3) {
+    font-weight: bold;
+    font-size: 18px;
+}
+.Opinion-article > p:last-child {
+    margin-left: -35px;
+    text-align: center;
+}
+.Opinion-article > p:last-child > span:first-child {
+    background: rebeccapurple;
+    padding: 15px; 
+    width: 50%;
+    float: left;
+}
+.Opinion-article > p:last-child > span:last-child {
+    background: red;
+    padding: 15px; 
+    width: 50%;
+    float: right;
+}
