@@ -37,11 +37,11 @@ class Content extends Component {
 						<Col lg="6"></Col>	
 					</Row>
 
-					<Row className="d-none d-sm-block">
-						<Col lg="5" className="Container-closing-in">
+					<Row>
+						<Col lg="5" className="Container-closing-in d-none d-sm-block">
 							<span className="float-right Closing-in">CLOSING IN </span>		
 						</Col>	
-						<Col lg="7" className="Container-days">
+						<Col lg="7" className="Container-days d-none d-sm-block">
 							<span className="Number-days">{this.props.closingin} </span>
 							<span className="Number-days">days</span>
 						</Col>

@@ -4,24 +4,19 @@ import { Route, Switch } from 'react-router-dom';
 
 // Components
 import PastTrials from './components/PastTrials';
-/*import App from './components/App';
-import Page404 from './components/Page404';*/
+import HowItWorks from './components/HowItWorks';
+import LogIn from './components/LogIn';
 
 // Containers
 import Home from './containers/Home';
-
-
-// import Library from './containers/Library';
-
-/*    <Route exact path="/about" component={About} />
-      <Route component={Page404} />
-      */
 
 const AppRoutes = () =>
   
     <Switch>
         <Route exact path="/" component={Home} />
-        <Route exact path="/past-trials" component={PastTrials} />
+        <Route exact path="/past-trials" component={PastTrials} /> 
+        <Route exact path="/how-it-works" component={HowItWorks} />         
+        <Route exact path="/log-in" component={LogIn} />                         
     </Switch>
   
 export default AppRoutes;
