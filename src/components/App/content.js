@@ -9,9 +9,14 @@ import DownHand from '../Icons/downhand';
 
 class Content extends Component {
 	render() {
+		let divStyle = {
+			backgroundImage: 'url(images/' + this.props.image + ')',
+			backgroundRepeat: 'no-repeat',
+			backgroundSize: 'cover',
+		  };
 		return (
-			<section>									
-				<section className="Opinion">
+			<div>									
+				<section style={divStyle} className="Opinion">
 					<Row>
 						<Col lg="6" className="Container-opinion">
 							<article className="Opinion-article">
@@ -32,7 +37,7 @@ class Content extends Component {
 						<Col lg="6"></Col>	
 					</Row>
 
-					<Row>
+					<Row className="d-none d-sm-block">
 						<Col lg="5" className="Container-closing-in">
 							<span className="float-right Closing-in">CLOSING IN </span>		
 						</Col>	
@@ -60,7 +65,6 @@ class Content extends Component {
 						</Col>
 					</Row>
 				
-
 				<section>
 					<h1 className="Votes-title">Votes</h1>
 					<Row>
@@ -78,7 +82,7 @@ class Content extends Component {
 				</section>				
 	
 				</section>
-			</section>
+			</div>
 			);
 	}
 }

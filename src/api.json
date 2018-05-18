@@ -9,6 +9,7 @@
         "messagetitle": "Speak out. Be heard.",
         "messagedescription": "Be counted",
         "message": "Rule of Thumb is a crowd sourced court of public opinion where anyone and everyone can speak out and speak freely. It’s easy: You share your opinion, we analyze and put the data in a public report.",
+        "image": "pope.png",
         "votingboxes": [
             {                                                                                     
                 "id": "1",
@@ -22,7 +23,7 @@
             },                
             {                                                                                     
                 "id": "2",
-                "image": "kanye-west.png",
+                "image": "mark.png",
                 "character": "Mark Zuckerberg",
                 "sectiontime": 1,
                 "section": "Business",                
@@ -32,14 +33,24 @@
             },                
             {                                                                                     
                 "id": "3",
-                "image": "kanye-west.png",
+                "image": "malala.png",
                 "character": "Cristina Fernández",
                 "sectiontime": 1,
                 "section": "Politics",                
                 "description": "Vestibulum diam ante, porttitor a odio eget, rhoncus neque. Aenean eu velit libero.",
                 "upvotes": 0,
                 "downvotes": 0                                       
-            }
+            },
+            {                                                                                     
+                "id": "4",
+                "image": "malala.png",
+                "character": "Cristina Fernández",
+                "sectiontime": 1,
+                "section": "Politics",                
+                "description": "Vestibulum diam ante, porttitor a odio eget, rhoncus neque. Aenean eu velit libero.",
+                "upvotes": 0,
+                "downvotes": 0                                       
+            }            
         ]
     }       
 ]

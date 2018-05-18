@@ -7,14 +7,11 @@ import Content from './content';
 
 // Css
 import './styles.css';
-
-// Logo
-import logo from '../../assets/pope.png';
 	
 class App extends Component {
 	render() {
 		return (
-			<section>
+			<div>
 				<Header />
 				{
 					this.props.character.map((item) => {
@@ -26,7 +23,7 @@ class App extends Component {
 					)
 					})
 				}				
-			</section>
+			</div>
 		);
 	}
 }

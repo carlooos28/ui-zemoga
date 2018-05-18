@@ -50,13 +50,14 @@ class CandidateList extends Component {
 	render() {
 		let divStyle = {
 			backgroundImage: 'url(images/' + this.props.image + ')',
-			height: '560px'			
+			height: '560px',
+			backgroundSize: 'cover'
 		  },
 		    totalUpCount   = Math.round(this.state.upcount / (this.state.upcount + this.state.downcount)*100),
 			totalDownCount =  Math.round(this.state.downcount / (this.state.upcount + this.state.downcount)*100);
 
 		return (
-			<Col lg="6"  >
+			<Col lg="6" className="Candidate" >
 				<div style={divStyle} className="img-fluid">
 					<div className="Votes-character">
 					<div>
@@ -77,15 +78,17 @@ class CandidateList extends Component {
 					<p>
 						<span className="Votes-up" onClick={this.handleUpVoteClick}><HandUp size={16} color="#ffffff" /></span>
 						<span className="Votes-down" onClick={this.handleDownVoteClick}><DownHand size={16} color="#ffffff" /></span>
-						<Button className="btn-md btn btn-outline-dark" onClick={this.onVote}>Vote now</Button>						 
+						<Button className="btn-md Btn-vote" onClick={this.onVote}>Vote now</Button>						 
 					</p>				
 				</section>					
 				<p className="Voting-result">
-						<span><HandUp size={28} color="#ffffff" />
-							{isNaN(totalUpCount) ? 0 : totalUpCount}% 
+						<span>
+							<HandUp size={28} color="#ffffff" />
+							<span className="Total">{isNaN(totalUpCount) ? 0 : totalUpCount}% </span>
 						</span>
-						<span><DownHand size={28} color="#ffffff" /> 
-							{isNaN(totalDownCount) ? 0 : totalDownCount}% 
+						<span>
+							<DownHand size={28} color="#ffffff" /> 
+							<span className="Total"> {isNaN(totalDownCount) ? 0 : totalDownCount}% </span>
 						</span>
 					</p>										
 					</div></div>

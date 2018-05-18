@@ -1,5 +1,4 @@
 .Opinion {
-    background: url(http://localhost:9000/images/pope.841a3cc7d03c887e3cdb922c4bdb6a01.png) no-repeat;
     height: 700px;
 }
 .Opinion-article {
@@ -24,7 +23,7 @@
     font-size: 22px;
     padding-right: 45px;
 }
-.Opinion, .Link > a, .Votes-character, .Votes{
+.Opinion, .Link > a, .Votes-character, .Votes, Btn-vote{
     color: #FFFFFF;
 }
 .Link > a{
@@ -101,18 +100,31 @@
 }
 .Votes-up {
     background: #1bbbb3;
-    padding: 4px;    
+    padding: 6px;    
+    margin-right: 8px;
 }
 .Votes-down {
     background: #ffad1d;
-    padding: 4px;    
+    padding: 6px;    
+    margin-right: 8px;
+}
+.Votes-up:active, .Votes-down:active {
+    border: 2px solid #fff;
 }
 .Votes-character {
     padding-top: 336px;
 }
+.Votes-character > div {
+    background-color: #88838357;
+    padding-bottom: 2px;
+}
+.Title-character > span:first-child {
+    position: absolute;
+}
 .Title-character > span:last-child {
     font-size: 45px;
     line-height: 48px;
+    margin-left: 33px;
 }
 .Section-time {
     margin-top: -14px;
@@ -135,4 +147,39 @@
     padding: 8px; 
     width: 20%;
     float: right;
+}
+.Btn-vote {
+    font-weight: bold;
+    border-color: #ffffff;
+    background-color: #ffffff00;
+}
+.Candidate {
+    margin-top: 30px;
+}
+.Total {
+    font-size: 24px;
+}
+
+@media only screen and (max-width: 600px) {
+    .Container-opinion {
+        padding: 0px;
+        margin-left: 0px;
+    }
+    .Message-content {
+        margin-left: 0px;
+    }
+    .Voting-result > span:first-child {
+        padding: 24px;    
+    }
+    .Opinion-article > p:nth-of-type(3){
+        width: 385px;
+        font-size: 15px;
+    }
+    .Character {
+        font-size: 48px; 
+    }    
+    .img-fluid{
+        background-position-x: center;
+    }
+
 }
