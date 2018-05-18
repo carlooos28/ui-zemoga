@@ -1,9 +1,11 @@
 // Dependecies
 import { Component } from 'react';
-import { Row, Col} from 'reactstrap';
+import { Row, Col } from 'reactstrap';
 
 // Components
 import CandidateList from './candidatelist';
+import HandUp from '../Icons/handup';
+import DownHand from '../Icons/downhand';
 
 class Content extends Component {
 	render() {
@@ -11,42 +13,57 @@ class Content extends Component {
 			<section>									
 				<section className="Opinion">
 					<Row>
-						<Col lg="6" className="Opinion-article">
-							<span>{this.props.question} </span>		
-							<br/>	
-							<span className="Character">{this.props.character} </span>
-							<p className="Description">{this.props.description} </p>
-							<p className="Link">
-								W <a href={this.props.linkmoreinformation}> More information </a>  
-							</p>
-							<p>Whats Your Verdict?</p>
-							<p>
-								<span>Icon Up</span>
-								<span>Icon Down</span>
-							</p>
+						<Col lg="6" className="Container-opinion">
+							<article className="Opinion-article">
+								<p>{this.props.question} </p>		
+								<p className="Character">{this.props.character} </p>
+								<p className="Description">{this.props.description} </p>
+								<p className="Link">
+									W <a href={this.props.linkmoreinformation}> More information </a>  
+								</p>
+								<p>Whats Your Verdict?</p>
+								<br/>
+								<p>
+									<span><HandUp size={36} color="#ffffff" /></span>
+									<span><DownHand size={36} color="#ffffff" /></span>
+								</p>
+							</article>
 						</Col>											
+						<Col lg="6"></Col>	
 					</Row>
+
 					<Row>
-						<Col lg="6" className="">
-							<span >Closing In </span>		
+						<Col lg="5" className="Container-closing-in">
+							<span className="float-right Closing-in">CLOSING IN </span>		
 						</Col>	
-						<Col lg="6">
-							<span>{this.props.closingin} </span>
-							<span>Days</span>
+						<Col lg="7" className="Container-days">
+							<span className="Number-days">{this.props.closingin} </span>
+							<span className="Number-days">days</span>
 						</Col>
-					</Row>							
+					</Row>
+
 				</section>
-				<Row>
-					<Col lg="12">
-						<p>
-							<span>{this.props.messagetitle} </span>
-							<strong>{this.props.messagedescription} </strong>
-							<span>{this.props.message} </span>						
-						</p>
-					</Col>
-				</Row>
+				<section className="container">					
+					<Row>
+						<Col lg="12">
+							<Row className="Message">
+								<Col lg="3">							
+									<span className="Message-title">{this.props.messagetitle} </span>
+									<strong className="Message-description">{this.props.messagedescription} </strong>					
+								</Col>
+								<Col lg="9">		
+									<article className="Message-content">					
+										<span>{this.props.message} </span>						
+									</article>
+								</Col>								
+							</Row>
+						</Col>
+					</Row>
+				
+
 				<section>
-					<h2>Votes</h2>
+					<h1 className="Votes-title">Votes</h1>
+					<Row>
 					{
 						this.props.votingboxes.map((item) => {
 							return (
@@ -57,7 +74,10 @@ class Content extends Component {
 							) 
 						})
 					}
+					</Row>
 				</section>				
+	
+				</section>
 			</section>
 			);
 	}

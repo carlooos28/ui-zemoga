@@ -5,47 +5,134 @@
 .Opinion-article {
     background-color: #565454d4;
     padding-top: 35px;
-    /*padding-left: 35px;*/
-    /*position: absolute;*/
-    margin-top: 180px;       
-    /*margin-left: 135px;*/
-    /*max-width: 510px;*/
-    /*max-height: 460px;*/    
+    padding-left: 35px;
+    margin-top: 90px;       
 }
-.ClosingIn {
-    /*position: absolute;*/
-    /*margin-top: 650px;*/       
+.Container-opinion {
+    padding-left: 88px;
+    padding-right: 88px;
+    padding-top: 88px;
+    padding-bottom: 41px;
+    margin-left: 58px;
 }
 .Character {
     font-size: 62px;
+    margin-top: -34px;
+    margin-left: -3px;
 }
 .Description {
     font-size: 22px;
     padding-right: 45px;
 }
-.Opinion, .Link > a{
+.Opinion, .Link > a, .Votes-character, .Votes{
     color: #FFFFFF;
 }
 .Link > a{
     text-decoration: underline;
 }
 .Opinion-article > p:nth-of-type(3) {
-    font-weight: bold;
     font-size: 18px;
+    margin-top: -8px;
+    width: 421px;
+    font-size: 21px;
+    line-height: 24px;  
+}
+.Opinion-article > p:nth-of-type(5) {
+    font-weight: bold;
 }
 .Opinion-article > p:last-child {
     margin-left: -35px;
     text-align: center;
 }
 .Opinion-article > p:last-child > span:first-child {
-    background: rebeccapurple;
+    background: #1bbbb3;
     padding: 15px; 
     width: 50%;
     float: left;
 }
 .Opinion-article > p:last-child > span:last-child {
-    background: red;
+    background: #ffad1d;
     padding: 15px; 
     width: 50%;
+    float: right;
+}
+.Container-closing-in {
+    background-color: #7070704d;
+    padding-top: 17px;
+    
+}
+.Closing-in {
+    font-size: 13px;
+    line-height: 21px;    
+    font-weight: bold;
+}
+.Container-days {
+    background-color: #ffffffb3;
+}
+.Number-days {
+    font-size: 37px; 
+    line-height: 50px;
+    color: #464646;
+}
+.Message {
+    margin-top: 28px;
+    background: #ebebeb;
+    padding: 28px;
+}
+.Message-title {
+    font-size: 22px;
+    line-height: 26px;
+    color: #333333;
+    font-weight: 300;    
+}
+.Message-description {
+    font-size: 37px;
+    line-height: 42px;
+    color: #333333;
+    font-weight: bold;
+}
+.Message-content {
+    margin-left: -60px;
+    margin-top: 9px;
+}
+.Votes-title {
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+.Votes-up {
+    background: #1bbbb3;
+    padding: 4px;    
+}
+.Votes-down {
+    background: #ffad1d;
+    padding: 4px;    
+}
+.Votes-character {
+    padding-top: 336px;
+}
+.Title-character > span:last-child {
+    font-size: 45px;
+    line-height: 48px;
+}
+.Section-time {
+    margin-top: -14px;
+
+}
+.Votes {
+    margin-left: 36px;
+}
+.Votes > p:nth-last-of-type(2) {
+    margin-top: -10px;
+}
+.Voting-result > span:first-child {
+    background: #1bbbb3;
+    padding: 8px; 
+    width: 80%;
+    float: left;
+}
+.Voting-result > span:last-child {
+    background: #ffad1d;
+    padding: 8px; 
+    width: 20%;
     float: right;
 }

@@ -8,7 +8,7 @@
         "closingin": 22,
         "messagetitle": "Speak out. Be heard.",
         "messagedescription": "Be counted",
-        "message": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only",
+        "message": "Rule of Thumb is a crowd sourced court of public opinion where anyone and everyone can speak out and speak freely. It’s easy: You share your opinion, we analyze and put the data in a public report.",
         "votingboxes": [
             {                                                                                     
                 "id": "1",
@@ -33,7 +33,7 @@
             {                                                                                     
                 "id": "3",
                 "image": "kanye-west.png",
-                "character": "Cristina Fernández de Kirchner",
+                "character": "Cristina Fernández",
                 "sectiontime": 1,
                 "section": "Politics",                
                 "description": "Vestibulum diam ante, porttitor a odio eget, rhoncus neque. Aenean eu velit libero.",
