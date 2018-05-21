@@ -22,7 +22,6 @@ with a feature of a voting process, using local storage.
 For more details, you can see the package.json,
 but in summary;
 - React.js v16
-- Redux
 - Sass
 
 Ready is everything! :)
