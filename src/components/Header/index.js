@@ -1,7 +1,7 @@
 // Dependecies
 import { Component } from 'react';
 import { Link } from 'react-router-dom';
-import { Row, Col, Nav } from 'reactstrap';
+import { Nav } from 'reactstrap';
 
 // Icons
 import Search from '../Icons/search';

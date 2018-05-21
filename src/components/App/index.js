@@ -11,7 +11,7 @@ import './styles.scss';
 class App extends Component {
 	render() {
 		return (
-			<Row>				
+			<Row>						
 				{
 					this.props.character.map((item) => {
 					return (

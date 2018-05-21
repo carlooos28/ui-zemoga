@@ -52,8 +52,7 @@ class CandidateList extends Component {
 			totalDownCount = Math.round(this.state.downcount / (this.state.upcount + this.state.downcount)*100);
 
 			totalUpCount   = isNaN(totalUpCount) ? 0 : totalUpCount;
-			totalDownCount = isNaN(totalDownCount) ? 0 : totalDownCount
-
+			totalDownCount = isNaN(totalDownCount) ? 0 : totalDownCount;
 
 		let divStyle = {
 			backgroundImage: 'url(images/' + this.props.image + ')',
@@ -68,7 +67,7 @@ class CandidateList extends Component {
 		  };
 
 		return (
-			<Col lg="6" className="Candidate" >
+			<div className="col-lg-6 col-xs-12 Candidate" >
 				<div style={divStyle} className="img-fluid">
 					<div className="Votes-character">					
 						<p className="Title-character">	
@@ -103,7 +102,7 @@ class CandidateList extends Component {
 						</p>										
 					</div>
 				</div>	
-			</Col>							
+			</div>							
 			);
 	}
 }

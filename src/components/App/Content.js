@@ -6,10 +6,10 @@ import { Row, Col } from 'reactstrap';
 import CandidateList from '../../containers/Candidatelist';
 
 // Components
+import Header from '../Header';
 import AddCharacter from './Add-character';
 import HandUp from '../Icons/handup';
 import DownHand from '../Icons/downhand';
-import Header from '../Header';
 import Footer from '../Footer';
 
 class Content extends Component {
