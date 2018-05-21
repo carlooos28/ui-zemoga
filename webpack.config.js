@@ -41,6 +41,19 @@ module.exports = (env) => {
           },
         },
         {
+          test: /\.scss$/,
+          use: [{
+              loader: "style-loader"
+          }, {
+              loader: "css-loader"
+          }, {
+              loader: "sass-loader",
+              options: {
+                  includePaths: ["absolute/path/a", "absolute/path/b"]
+              }
+          }]
+        },              
+        {
           test: /\.css$/,
           use: ExtractTextPlugin.extract({
             use: [
@@ -54,7 +67,7 @@ module.exports = (env) => {
           })
         },
         {
-          test: /\.(jpg|png|gif|svg)$/,
+          test: /\.(jpg|png|gif|svg|ttf)$/,
           use: {
             loader: 'url-loader',
             options: {

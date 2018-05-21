@@ -27,13 +27,13 @@ class Header extends Component {
 						</div>
 							<ul className="navbar-nav">
 								<li className="nav-item">
-									<Link  className="nav-link" to="/past-trials">Past Trials</Link>
+									<Link  className="nav-link" to="/ui-zemoga/past-trials">Past Trials</Link>
 								</li>
 								<li className="nav-item">
-									<Link  className="nav-link" to="/how-it-works">How It Works</Link>
+									<Link  className="nav-link" to="/ui-zemoga/how-it-works">How It Works</Link>
 								</li>	  
 								<li className="nav-item">
-									<Link  className="nav-link" to="/log-in">Log In / Sign Up</Link>
+									<Link  className="nav-link" to="/ui-zemoga/log-in">Log In / Sign Up</Link>
 								</li>	  	  
 							</ul>
 							
