@@ -25,16 +25,20 @@
     font-size: 22px;
     padding-right: 45px;
 }
-.Link > a{
-    text-decoration: underline;
-    color: $white-color;
+.Link {
+    a {
+        text-decoration: underline;
+        color: $white-color;
+    }
 }
-.Opinion-article > p:nth-of-type(3) {
-    font-size: 18px;
-    margin-top: -8px;
-    width: 421px;
-    font-size: 21px;
-    line-height: 24px;  
+.Opinion-article {
+    p:nth-of-type(3) {
+        font-size: 18px;
+        margin-top: -8px;
+        width: 421px;
+        font-size: 21px;
+        line-height: 24px;  
+    }
 }
 .Opinion-article > p:nth-of-type(5) {
     font-weight: bold;
@@ -94,8 +98,7 @@
     margin-top: 9px;
 }
 .Votes-title {
-    margin-top: 18px;
-    margin-bottom: 18px;
+    margin-top: 34px;
     color: $black-color;
 }
 .Votes-up {
@@ -127,12 +130,11 @@
 .Votes-character {
     padding-top: 336px;
 }
-.Votes-character > div {
-    background-color: $votes-character;
-    padding-bottom: 2px;
-}
 .Title-character > span:first-child {
     position: absolute;
+    background: $btn-up;
+    padding: 4px;
+    margin-top: 8px;
 }
 .Title-character > span:last-child {
     font-size: 45px;
@@ -174,7 +176,40 @@
 .Total {
     font-size: 24px;
 }
+.Add-character > div {
+    margin-top: 32px;
+    padding-top: 16px;
+    padding-left: 14px;  
+    padding-bottom: 1px;  
+}
+.Add-character {
+    color: $black-color;
+    background-image: url(../../assets/images/add_character.jpg);
+    p {
+        font-size: 32px;
 
+    }
+    button {
+        float: right;
+        margin-right: 22px;        
+    }
+}
+.Submit-a-name {
+    border: 2px solid $black-color;
+    border-radius: inherit;
+    color: $black-color;
+    font-weight: bold;
+    padding-right: 32px;
+    padding-left: 32px;    
+    padding-top: 10px;
+    padding-bottom: 10px;    
+    font-size: 18px;
+}
+footer {
+    margin-top: 32px;
+    background-color: red;
+
+}
 @media only screen and (max-width: 600px) {
     .Container-opinion {
         padding: 0px;
@@ -182,9 +217,6 @@
     }
     .Message-content {
         margin-left: 0px;
-    }
-    .Voting-result > span:first-child {
-        padding: 24px;    
     }
     .Opinion-article > p:nth-of-type(3){
         width: 385px;
@@ -194,7 +226,9 @@
         font-size: 48px; 
     }    
     .img-fluid{
-        background-position-y: center;
+        background-position: bottom;
     }
-
+    .Add-character > div > div:last-child {
+        padding-bottom: 12px;
+    }    
 }

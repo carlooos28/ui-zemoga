@@ -70,39 +70,38 @@ class CandidateList extends Component {
 		return (
 			<Col lg="6" className="Candidate" >
 				<div style={divStyle} className="img-fluid">
-					<div className="Votes-character">
-					<div>
-				<p className="Title-character">	
-					<span className="Votes-up"><HandUp size={16} color="#ffffff" /></span>						
-					<span> {this.props.character} </span>
-				</p>
-				<section className="Votes">
-					<p className="Section-time">
-						<span>
-							<strong>{this.props.sectiontime} month ago </strong>
-						</span> 
-						<span> in {this.props.section}</span>
-					</p>		
-					<p>
-						{this.props.description}
-					</p>						
-					<p>
-						<Button outline color="info" className="Votes-up" onClick={this.handleUpVoteClick}><HandUp size={16} color="#ffffff" /></Button>
-						<Button outline color="warning" className="Votes-down" onClick={this.handleDownVoteClick}><DownHand size={16} color="#ffffff" /></Button>
-						<Button className="btn-md Btn-vote" onClick={this.onVote}>Vote now</Button>						 
-					</p>				
-				</section>					
-				<p className="Voting-result">
-						<span style={upVotingResultStyle}>
-							<HandUp size={28} color="#ffffff" />
-							<span className="Total">{totalUpCount}% </span>
-						</span>
-						<span style={downVotingResultStyle}>
-							<DownHand size={28} color="#ffffff" /> 
-							<span className="Total"> {totalDownCount}% </span>
-						</span>
-					</p>										
-					</div></div>
+					<div className="Votes-character">					
+						<p className="Title-character">	
+							<span><HandUp size={16} color="#ffffff" /></span>						
+							<span> {this.props.character} </span>
+						</p>
+						<section className="Votes">
+							<p className="Section-time">
+								<span>
+									<strong>{this.props.sectiontime} month ago </strong>
+								</span> 
+								<span> in {this.props.section}</span>
+							</p>		
+							<p>
+								{this.props.description}
+							</p>						
+							<p>
+								<Button outline color="info" className="Votes-up" onClick={this.handleUpVoteClick}><HandUp size={16} color="#ffffff" /></Button>
+								<Button outline color="warning" className="Votes-down" onClick={this.handleDownVoteClick}><DownHand size={16} color="#ffffff" /></Button>
+								<Button className="btn-md Btn-vote" onClick={this.onVote}>Vote now</Button>						 
+							</p>				
+						</section>					
+						<p className="Voting-result">
+							<span style={upVotingResultStyle}>
+								<HandUp size={28} color="#ffffff" />
+								<span className="Total">{totalUpCount}% </span>
+							</span>
+							<span style={downVotingResultStyle}>
+								<DownHand size={28} color="#ffffff" /> 
+								<span className="Total"> {totalDownCount}% </span>
+							</span>
+						</p>										
+					</div>
 				</div>	
 			</Col>							
 			);

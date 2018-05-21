@@ -1,9 +1,9 @@
 // Dependecies
 import { Component } from 'react';
+import { Row } from 'reactstrap';
 
 // Components
-import Header from '../Header';
-import Content from './content';
+import Content from './Content';
 
 // Css
 import './styles.scss';
@@ -11,8 +11,7 @@ import './styles.scss';
 class App extends Component {
 	render() {
 		return (
-			<div>
-				<Header />
+			<Row>				
 				{
 					this.props.character.map((item) => {
 					return (
@@ -22,8 +21,8 @@ class App extends Component {
 						/>
 					)
 					})
-				}				
-			</div>
+				}
+			</Row>
 		);
 	}
 }

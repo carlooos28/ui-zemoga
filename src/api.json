@@ -9,11 +9,11 @@
         "messagetitle": "Speak out. Be heard.",
         "messagedescription": "Be counted",
         "message": "Rule of Thumb is a crowd sourced court of public opinion where anyone and everyone can speak out and speak freely. It’s easy: You share your opinion, we analyze and put the data in a public report.",
-        "image": "pope.png",
+        "image": "pope.jpg",
         "votingboxes": [
             {                                                                                     
                 "id": "1",
-                "image": "kanye-west.png",
+                "image": "kanye-west.jpg",
                 "character": "Kanye West",
                 "sectiontime": 1,
                 "section": "Entertainment",                
@@ -23,7 +23,7 @@
             },                
             {                                                                                     
                 "id": "2",
-                "image": "mark.png",
+                "image": "mark.jpg",
                 "character": "Mark Zuckerberg",
                 "sectiontime": 1,
                 "section": "Business",                
@@ -33,7 +33,7 @@
             },                
             {                                                                                     
                 "id": "3",
-                "image": "malala.png",
+                "image": "cristina.jpg",
                 "character": "Cristina Fernández",
                 "sectiontime": 1,
                 "section": "Politics",                
@@ -43,7 +43,7 @@
             },
             {                                                                                     
                 "id": "4",
-                "image": "malala.png",
+                "image": "malala.jpg",
                 "character": "Malala Yousafzai",
                 "sectiontime": 1,
                 "section": "Entertainment",                

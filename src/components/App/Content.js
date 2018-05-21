@@ -2,10 +2,15 @@
 import { Component } from 'react';
 import { Row, Col } from 'reactstrap';
 
-// Components
+// Containers 
 import CandidateList from '../../containers/Candidatelist';
+
+// Components
+import AddCharacter from './Add-character';
 import HandUp from '../Icons/handup';
 import DownHand from '../Icons/downhand';
+import Header from '../Header';
+import Footer from '../Footer';
 
 class Content extends Component {
 	render() {
@@ -15,9 +20,9 @@ class Content extends Component {
 			backgroundSize: 'cover',
 		  };
 		return (
-			<div>									
-				<section style={divStyle} className="Opinion">
-					<Row>
+			<Col>
+				<Header />
+					<Row style={divStyle} className="Opinion">
 						<Col lg="6" className="Container-opinion">
 							<article className="Opinion-article">
 								<p>{this.props.question} </p>		
@@ -47,42 +52,45 @@ class Content extends Component {
 						</Col>
 					</Row>
 
-				</section>
 				<section className="container">					
-					<Row>
-						<Col lg="12">
-							<Row className="Message">
-								<Col lg="3">							
-									<span className="Message-title">{this.props.messagetitle} </span>
-									<strong className="Message-description">{this.props.messagedescription} </strong>					
-								</Col>
-								<Col lg="9">		
-									<article className="Message-content">					
-										<span>{this.props.message} </span>						
-									</article>
-								</Col>								
-							</Row>
-						</Col>
-					</Row>
-				
-				<section>
-					<h1 className="Votes-title">Votes</h1>
-					<Row>
-					{
-						this.props.votingboxes.map((item) => {
-							return (
-								<CandidateList 
-									key={item.id}
-									{...item}
-								/>
-							) 
-						})
-					}
-					</Row>
-				</section>				
-	
+					<Col lg="12">
+						<Row className="Message">
+							<Col lg="3">							
+								<span className="Message-title">{this.props.messagetitle} </span>
+								<br/>
+								<strong className="Message-description">{this.props.messagedescription} </strong>					
+							</Col>
+							<Col lg="9">		
+								<article className="Message-content">					
+									<span>{this.props.message} </span>						
+								</article>
+							</Col>								
+						</Row>
+					</Col>
+
+					<section>
+						<Row>
+							<Col lg="12">
+								<h1 className="Votes-title">Votes</h1>
+							</Col>									
+						</Row>						
+						<Row>
+						{
+							this.props.votingboxes.map((item) => {
+								return (
+									<CandidateList 
+										key={item.id}
+										{...item}
+									/>
+								) 
+							})
+						}
+						</Row>
+					</section>	
+					<AddCharacter />				
+					<Footer />				
 				</section>
-			</div>
+			</Col>
 			);
 	}
 }
