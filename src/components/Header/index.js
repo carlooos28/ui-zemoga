@@ -5,8 +5,9 @@ import { Row, Col, Nav } from 'reactstrap';
 
 // Icons
 import Search from '../Icons/search';
+
 // Css
-import './styles.css';
+import './styles.scss';
 
 class Header extends Component {
 	render() {
@@ -29,10 +30,10 @@ class Header extends Component {
 									<Link  className="nav-link" to="/past-trials">Past Trials</Link>
 								</li>
 								<li className="nav-item">
-									<Link  className="nav-link" to="/past-trials">How It Works</Link>
+									<Link  className="nav-link" to="/how-it-works">How It Works</Link>
 								</li>	  
 								<li className="nav-item">
-									<Link  className="nav-link" to="/past-trials">Log In / Sign Up</Link>
+									<Link  className="nav-link" to="/log-in">Log In / Sign Up</Link>
 								</li>	  	  
 							</ul>
 							

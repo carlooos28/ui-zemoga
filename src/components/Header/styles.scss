@@ -1,9 +1,11 @@
+@import '../../styles/vars';
+
 .Header {
     position: absolute;
     margin-top: 20px;
 }
 .Title-logo, .navbar-light .navbar-nav .nav-item > .nav-link {
-    color: #FFFFFF;
+    color: $white-color;
 }
 .Title-logo {
     padding-left: 106px;

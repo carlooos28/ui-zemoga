@@ -3,7 +3,7 @@ import { Component } from 'react';
 
 // Components
 import Header from '../Header';
-	
+
 class PastTrials extends Component {
 	render() {
 		return (

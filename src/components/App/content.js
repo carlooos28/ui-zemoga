@@ -3,7 +3,7 @@ import { Component } from 'react';
 import { Row, Col } from 'reactstrap';
 
 // Components
-import CandidateList from './candidatelist';
+import CandidateList from '../../containers/Candidatelist';
 import HandUp from '../Icons/handup';
 import DownHand from '../Icons/downhand';
 

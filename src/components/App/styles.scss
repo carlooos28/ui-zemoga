@@ -1,8 +1,10 @@
+@import '../../styles/vars';
+
 .Opinion {
     height: 700px;
 }
 .Opinion-article {
-    background-color: #565454d4;
+    background-color: $opinion-article-color;
     padding-top: 35px;
     padding-left: 35px;
     margin-top: 90px;       
@@ -23,11 +25,9 @@
     font-size: 22px;
     padding-right: 45px;
 }
-.Opinion, .Link > a, .Votes-character, .Votes, Btn-vote{
-    color: #FFFFFF;
-}
 .Link > a{
     text-decoration: underline;
+    color: $white-color;
 }
 .Opinion-article > p:nth-of-type(3) {
     font-size: 18px;
@@ -44,19 +44,19 @@
     text-align: center;
 }
 .Opinion-article > p:last-child > span:first-child {
-    background: #1bbbb3;
+    background: $btn-up;
     padding: 15px; 
     width: 50%;
     float: left;
 }
 .Opinion-article > p:last-child > span:last-child {
-    background: #ffad1d;
+    background: $btn-down;
     padding: 15px; 
     width: 50%;
     float: right;
 }
 .Container-closing-in {
-    background-color: #7070704d;
+    background-color: $container-closing-in-color;
     padding-top: 17px;
     
 }
@@ -66,28 +66,27 @@
     font-weight: bold;
 }
 .Container-days {
-    background-color: #ffffffb3;
+    background-color: $container-days-color;
 }
 .Number-days {
     font-size: 37px; 
     line-height: 50px;
-    color: #464646;
+    color: $black-color;
 }
 .Message {
     margin-top: 28px;
-    background: #ebebeb;
+    background: $message-color;
     padding: 28px;
+    color: $black-color;
 }
 .Message-title {
     font-size: 22px;
-    line-height: 26px;
-    color: #333333;
+    line-height: 26px;    
     font-weight: 300;    
 }
 .Message-description {
     font-size: 37px;
     line-height: 42px;
-    color: #333333;
     font-weight: bold;
 }
 .Message-content {
@@ -97,25 +96,39 @@
 .Votes-title {
     margin-top: 18px;
     margin-bottom: 18px;
+    color: $black-color;
 }
 .Votes-up {
-    background: #1bbbb3;
-    padding: 6px;    
+    background: $btn-up;
+    padding: 4px;    
     margin-right: 8px;
+    border: none;
+    box-shadow: none;
+    border-radius: initial;
 }
 .Votes-down {
-    background: #ffad1d;
-    padding: 6px;    
+    background: $btn-down;
+    padding: 4px;    
     margin-right: 8px;
+    border: none;
+    box-shadow: none;
+    border-radius: initial;
 }
-.Votes-up:active, .Votes-down:active {
-    border: 2px solid #fff;
+.Votes-up:active, .Votes-up:hover, .Votes-up:focus, .Votes-down:active, .Votes-down:hover, .Votes-down:focus {
+    background: $btn-up;
+    border: 2px solid $white-color;
+    box-shadow: none;
+}
+.Votes-down:active, .Votes-down:hover, .Votes-down:focus {
+    background: $btn-down;
+    border: 2px solid $white-color;
+    box-shadow: none;    
 }
 .Votes-character {
     padding-top: 336px;
 }
 .Votes-character > div {
-    background-color: #88838357;
+    background-color: $votes-character;
     padding-bottom: 2px;
 }
 .Title-character > span:first-child {
@@ -137,21 +150,23 @@
     margin-top: -10px;
 }
 .Voting-result > span:first-child {
-    background: #1bbbb3;
+    background: $btn-up;
     padding: 8px; 
-    width: 80%;
     float: left;
 }
 .Voting-result > span:last-child {
-    background: #ffad1d;
+    background: $btn-down;
     padding: 8px; 
-    width: 20%;
     float: right;
 }
 .Btn-vote {
     font-weight: bold;
-    border-color: #ffffff;
-    background-color: #ffffff00;
+    border-color: $white-color;
+    background-color: $btn-vote-color;
+    border-radius: inherit;
+}
+.Btn-vote:focus {
+    box-shadow: none;
 }
 .Candidate {
     margin-top: 30px;

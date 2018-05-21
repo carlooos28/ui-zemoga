@@ -3,8 +3,8 @@ import { Component } from 'react';
 import { Row, Col, Button } from 'reactstrap';
 
 // Components 
-import HandUp from '../Icons/handup';
-import DownHand from '../Icons/downhand';
+import HandUp from '../components/Icons/handup';
+import DownHand from '../components/Icons/downhand';
 
 class CandidateList extends Component {	
 	state = {
@@ -48,13 +48,24 @@ class CandidateList extends Component {
 		}
 	}
 	render() {
+		let totalUpCount   = Math.round(this.state.upcount / (this.state.upcount + this.state.downcount)*100),
+			totalDownCount = Math.round(this.state.downcount / (this.state.upcount + this.state.downcount)*100);
+
+			totalUpCount   = isNaN(totalUpCount) ? 0 : totalUpCount;
+			totalDownCount = isNaN(totalDownCount) ? 0 : totalDownCount
+
+
 		let divStyle = {
 			backgroundImage: 'url(images/' + this.props.image + ')',
 			height: '560px',
 			backgroundSize: 'cover'
 		  },
-		    totalUpCount   = Math.round(this.state.upcount / (this.state.upcount + this.state.downcount)*100),
-			totalDownCount =  Math.round(this.state.downcount / (this.state.upcount + this.state.downcount)*100);
+		  upVotingResultStyle = {
+		  	width: totalUpCount === 0 ? 50 + '%' : totalUpCount + '%'
+		  },
+		  downVotingResultStyle = {
+		  	width: totalDownCount === 0 ? 50 + '%' : totalDownCount + '%'
+		  };
 
 		return (
 			<Col lg="6" className="Candidate" >
@@ -76,19 +87,19 @@ class CandidateList extends Component {
 						{this.props.description}
 					</p>						
 					<p>
-						<span className="Votes-up" onClick={this.handleUpVoteClick}><HandUp size={16} color="#ffffff" /></span>
-						<span className="Votes-down" onClick={this.handleDownVoteClick}><DownHand size={16} color="#ffffff" /></span>
+						<Button outline color="info" className="Votes-up" onClick={this.handleUpVoteClick}><HandUp size={16} color="#ffffff" /></Button>
+						<Button outline color="warning" className="Votes-down" onClick={this.handleDownVoteClick}><DownHand size={16} color="#ffffff" /></Button>
 						<Button className="btn-md Btn-vote" onClick={this.onVote}>Vote now</Button>						 
 					</p>				
 				</section>					
 				<p className="Voting-result">
-						<span>
+						<span style={upVotingResultStyle}>
 							<HandUp size={28} color="#ffffff" />
-							<span className="Total">{isNaN(totalUpCount) ? 0 : totalUpCount}% </span>
+							<span className="Total">{totalUpCount}% </span>
 						</span>
-						<span>
+						<span style={downVotingResultStyle}>
 							<DownHand size={28} color="#ffffff" /> 
-							<span className="Total"> {isNaN(totalDownCount) ? 0 : totalDownCount}% </span>
+							<span className="Total"> {totalDownCount}% </span>
 						</span>
 					</p>										
 					</div></div>

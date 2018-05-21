@@ -1,0 +1,8 @@
+@import './vars';
+@import './font-faces';
+@import './global-classes';
+
+body {
+  font-family: $main-font;
+  color: $white-color;
+}

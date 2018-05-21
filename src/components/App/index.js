@@ -6,7 +6,7 @@ import Header from '../Header';
 import Content from './content';
 
 // Css
-import './styles.css';
+import './styles.scss';
 	
 class App extends Component {
 	render() {

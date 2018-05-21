@@ -30,11 +30,24 @@ module.exports = {
         },
       },
       {
+        test: /\.scss$/,
+        use: [{
+            loader: "style-loader"
+        }, {
+            loader: "css-loader"
+        }, {
+            loader: "sass-loader",
+            options: {
+                includePaths: ["absolute/path/a", "absolute/path/b"]
+            }
+        }]
+      },      
+      {
         test: /\.css$/,
         use: ['style-loader', 'css-loader']
       },
       {
-        test: /\.(jpg|png|gif|svg)$/,
+        test: /\.(jpg|png|gif|svg|ttf)$/,
         use: {
           loader: 'url-loader',
           options: {

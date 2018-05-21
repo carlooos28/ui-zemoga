@@ -2,7 +2,7 @@
 import { Component } from 'react';
 
 // Css
-import './styles.css';
+import '../../styles/main.scss';
 
 class Layout extends Component {
 	render() {
