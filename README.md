@@ -4,7 +4,7 @@
 The goal is to create a JSON structure, consume this structure to perform a data feed,
 with a feature of a voting process, using local storage.
 
-[Click here to see the demo](https://carlooos28.github.io/ui-zemoga/)
+[Click here to see the demo](https://carlooos28.github.io/landing-page-pope-francis/)
 
 ### Global Dependencies
 - Node.js v8. *
