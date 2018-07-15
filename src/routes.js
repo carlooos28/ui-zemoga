@@ -13,10 +13,10 @@ import Home from './containers/Home';
 const AppRoutes = () =>
   
     <Switch>
-        <Route exact path="/ui-zemoga/" component={Home} />
-        <Route exact path="/ui-zemoga/past-trials" component={PastTrials} /> 
-        <Route exact path="/ui-zemoga/how-it-works" component={HowItWorks} />         
-        <Route exact path="/ui-zemoga/log-in" component={LogIn} />                         
+        <Route exact path="/landing-page-pope-francis/" component={Home} />
+        <Route exact path="/landing-page-pope-francis/past-trials" component={PastTrials} /> 
+        <Route exact path="/landing-page-pope-francis/how-it-works" component={HowItWorks} />         
+        <Route exact path="/landing-page-pope-francis/log-in" component={LogIn} />                         
     </Switch>
   
 export default AppRoutes;
